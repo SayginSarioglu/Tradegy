@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e293c">>
+
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_marginTop="112dp"
+        android:hint="Send Message To"
+        android:textColor="#c6daec"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etDescription" />
+
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:textColor="#c6daec"
+        android:hint="Message"
+        android:layout_marginTop="43dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/bSend"
+        android:text="Send"
+        android:textColor="#2c9dde"
+        android:background="#c6daec"
+        android:layout_marginTop="380dp"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

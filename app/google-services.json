@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "396674730587",
+    "project_id": "sanaltragedy-1313"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396674730587:android:51b66a3a354359d5",
+        "android_client_info": {
+          "package_name": "com.example2.diablove.login_register"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrDHHdP32ia8ZisKH0w308eKPVZNxSpPA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

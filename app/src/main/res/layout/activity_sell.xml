@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:id="@+id/main_content"
+
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0e293c">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/usersymbol"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:textColor="#2c9dde"
+            android:background="#c6daec"
+            android:text="Take a Picture"
+            android:id="@+id/uploadButtoCamera"
+            android:layout_below="@+id/photo"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:textColor="#2c9dde"
+            android:background="#c6daec"
+
+            android:text="Choose From Gallery"
+            android:id="@+id/uploadPhotoGallery"
+            android:layout_below="@+id/photo"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:textColor="#c6eadc"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/uploadButtoCamera"
+            android:layout_alignStart="@+id/uploadPhotoGallery"
+            android:layout_alignLeft="@+id/uploadPhotoGallery"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_below="@+id/spinner"
+            android:layout_marginLeft="15dp"
+            android:textColor="#c6eadc"
+            android:textColorHint="#c6eadc"
+            android:hint="Name this item" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:textColor="#c6eadc"
+            android:textColorHint="#c6eadc"
+            android:layout_below="@+id/editText"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_alignLeft="@id/editText"
+            android:hint="Additional information" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell Item"
+            android:id="@+id/sellbutton"
+            android:layout_below="@+id/editText2"
+            android:textColor="#2c9dde"
+            android:background="#c6daec"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Item Name:"
+            android:id="@+id/textView2"
+            android:textColor="#c6eadc"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/spinner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Item Info:"
+            android:id="@+id/textView3"
+            android:textColor="#c6eadc"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/spinner"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_sliding_menu"
+        android:background="#FFFFFF"
+        android:choiceMode="singleChoice"
+        android:layout_gravity="start"
+        >
+
+    </ListView>
+</android.support.v4.widget.DrawerLayout>

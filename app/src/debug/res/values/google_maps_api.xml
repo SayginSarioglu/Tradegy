@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=F4:2B:E8:AC:CE:89:AC:F7:A7:0E:5C:BE:ED:14:5C:F7:4D:B0:19:83%3Bcom.example2.diablove.login_register
+
+    You can also add your credentials to an existing key, using this line:
+    F4:2B:E8:AC:CE:89:AC:F7:A7:0E:5C:BE:ED:14:5C:F7:4D:B0:19:83;com.example2.diablove.login_register
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyBsL1vIkdH74B5DPnxxT5dFenYod1LmiKE
+    </string>
+</resources>
